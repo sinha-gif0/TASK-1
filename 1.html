@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7ff;
+}
+
+header{
+    background:white;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#6c63ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#6c63ff;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#6c63ff,#00c6ff);
+}
+
+.hero h1{
+    font-size:52px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:white;
+    color:#6c63ff;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+.features{
+    padding:80px 10%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#6c63ff;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">NovaTech</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Build the Future With Innovation</h1>
+
+        <p>Modern solutions for modern businesses. Fast, secure and reliable.</p>
+
+        <a href="#" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <i class="fas fa-bolt"></i>
+        <h3>Fast</h3>
+        <p>Lightning fast performance for everyone.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-lock"></i>
+        <h3>Secure</h3>
+        <p>Your data stays protected with top security.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive</h3>
+        <p>Looks amazing on desktop, tablet and mobile.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-headset"></i>
+        <h3>Support</h3>
+        <p>24×7 customer support whenever you need it.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 NovaTech | Home | About | Contact</p>
+</footer>
+
+</body>
+</html>
